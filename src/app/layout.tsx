@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary";
 import { NotificationProvider } from "@/components/ui/NotificationSystem";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +20,7 @@ export const metadata: Metadata = {
   title: "GoQuant Latency Visualizer",
   description: "Real-time visualization of cryptocurrency exchange latency across global cloud infrastructure",
   keywords: "cryptocurrency, latency, visualization, exchanges, cloud, AWS, GCP, Azure",
-  authors: [{ name: "GoQuant Team" }],
+  authors: [{ name: "Akshat Kumar" }],
   viewport: "width=device-width, initial-scale=1",
 };
 
@@ -37,6 +39,8 @@ export default function RootLayout({
             {children}
           </NotificationProvider>
         </ErrorBoundary>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
