@@ -2,6 +2,32 @@
   "name": "goquant-latency-visualizer",
   "version": "0.1.0",
   "private": true,
+  "description": "Real-time 3D visualization platform for cryptocurrency exchange latency monitoring across global cloud infrastructure",
+  "author": {
+    "name": "Akshat Kumar",
+    "email": "Kumarakshat366@gmail.com",
+    "url": "https://github.com/AKR4PC"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AKR4PC/goquant-latency-visualizer.git"
+  },
+  "homepage": "https://github.com/AKR4PC/goquant-latency-visualizer#readme",
+  "bugs": {
+    "url": "https://github.com/AKR4PC/goquant-latency-visualizer/issues"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "latency",
+    "visualization",
+    "3d",
+    "globe",
+    "trading",
+    "exchanges",
+    "nextjs",
+    "threejs",
+    "typescript"
+  ],
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -9,19 +35,37 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^10.6.0",
+    "@react-three/fiber": "^9.2.0",
+    "@types/lodash": "^4.17.20",
+    "@types/three": "^0.178.1",
+    "axios": "^1.11.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.525.0",
+    "motion": "^12.23.7",
+    "next": "15.4.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.4.3"
+    "recharts": "^3.1.0",
+    "swr": "^2.3.4",
+    "tailwind-merge": "^3.3.1",
+    "three": "^0.178.0",
+    "three-globe": "^2.43.0",
+    "three-glow-mesh": "^0.1.2"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.4.3",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
